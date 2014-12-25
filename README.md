@@ -3,11 +3,21 @@
 This serves as a ducumentation oon how I was able to set up my Ubuntu 14.04.1 LTS.
 I was able to find that info using '`lsb_release -a`' via the terminal.
 
+## Setting Up Your LAMMP Stack ##
+- `sudo apt-get install apache2`
+- `sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql`
+- `sudo mysql_install_db`
+- `sudo /usr/bin/mysql_secure_installation`
+- `sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt`
+- `sudo service apache2 restart and sudo service mysqld restart`
+
+The long explanation can be found at [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
+
 ## Setting Up Git ##
 - `sudo apt-get install git` 
 - `git config --global user.name "Your Name"`
 - `git config --global user.email "youremail@domain.com"`
-- [Set Up SSH Keys!](https://help.github.com/articles/generating-ssh-keys/#platform-linux)
+- `[Set Up SSH Keys!](https://help.github.com/articles/generating-ssh-keys/#platform-linux)`
 
 
 ## Server Communication ##
@@ -23,7 +33,14 @@ Documantation will be continued ...... But The idea is to Dev on my local machin
 ### Some usefull Terminal Commands ###
 - `sudo chown -R username:group directory` :: **for changing ownership to a folder**
 - `sudo -i` :: **for doing stuff as root**
-- `mkdir -pv /foo/bar` :: **Make parent directories as needed and the -v which makes mkdir tell us what it is doing**
-- `cp or mv source destination` :: **Copying Moving files**
-- `./scriptname.sh`  :: has something to da with bower **Running a shell script in the Current Folder [Repos](https://gist.github.com/robwierzbowski/5430952)**
+- `mkdir -pv /foo/bar` :: **sMake parent directories as neseded and the -v which makes mkdir tell us what it is doing**
+- `cp or mv source destination` :: **Copying Moving filess**s
+- `./scriptname.sh`  :: has something to da with bower **sRunsning a shell script in the Current Folder [Repos](https://gist.gisudo apt-get install apaches2
+s- sudo apt-get install mysql-servesr libapache2-mod-auth-mysql php5-mysql
+- sudo smysql_install_db
+s- sudo /usr/bin/mysql_secure_installation
+- sudo apts
+The long explanation can be found at [Digital Ocean
+]-get install php5 libapache2-mod-php5 php5-mcryp(https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
+- sudo service apache2 restart and sudo service mysqld restart thub.com/robwierzbowski/5430952)**
 - `ifconfig eth0 | grep inet | awk '{ print $2 }'` :: **Find your Server’s IP address**
