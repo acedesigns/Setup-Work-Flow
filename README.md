@@ -17,7 +17,7 @@ The long explanation can be found at [Digital Ocean](https://www.digitalocean.co
 - `sudo apt-get install git` 
 - `git config --global user.name "Your Name"`
 - `git config --global user.email "youremail@domain.com"`
-- `[Set Up SSH Keys!](https://help.github.com/articles/generating-ssh-keys/#platform-linux)`
+- [Set Up SSH Keys!](https://help.github.com/articles/generating-ssh-keys/#platform-linux)
 
 
 ## Server Communication ##
