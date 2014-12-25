@@ -2,7 +2,7 @@
 
 This serves as a ducumentation oon how I was able to set up my Ubuntu 14.04.1 LTS.
 
-I was able to find that info using 'lsb_release -a' via the terminal.
+I was able to find that info using '`lsb_release -a`' via the terminal.
 
 ## Setting Up Git ##
 - sudo apt-get install git 
