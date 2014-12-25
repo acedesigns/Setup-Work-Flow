@@ -1,9 +1,9 @@
 ##My set up for Ubuntu 14.04##
 
-This serves as a ducumentation oon how I was able to set up my Ubuntu 14.04.1 LTS.
+This serves as a ducumentation on how I was able to set up my Ubuntu 14.04.1 LTS.
 I was able to find that info using '`lsb_release -a`' via the terminal.
 
-## Setting Up Your LAMMP Stack ##
+## Setting Up the LAMMP Stack ##
 - `sudo apt-get install apache2`
 - `sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql`
 - `sudo mysql_install_db`
@@ -18,6 +18,7 @@ The long explanation can be found at [Digital Ocean](https://www.digitalocean.co
 - `git config --global user.name "Your Name"`
 - `git config --global user.email "youremail@domain.com"`
 - [Set Up SSH Keys!](https://help.github.com/articles/generating-ssh-keys/#platform-linux)
+- [Basic Git Commands](http://rogerdudler.github.io/git-guide/) 
 
 
 ## Server Communication ##
