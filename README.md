@@ -35,12 +35,5 @@ Documantation will be continued ...... But The idea is to Dev on my local machin
 - `sudo -i` :: **for doing stuff as root**
 - `mkdir -pv /foo/bar` :: **sMake parent directories as neseded and the -v which makes mkdir tell us what it is doing**
 - `cp or mv source destination` :: **Copying Moving filess**s
-- `./scriptname.sh`  :: has something to da with bower **sRunsning a shell script in the Current Folder [Repos](https://gist.gisudo apt-get install apaches2
-s- sudo apt-get install mysql-servesr libapache2-mod-auth-mysql php5-mysql
-- sudo smysql_install_db
-s- sudo /usr/bin/mysql_secure_installation
-- sudo apts
-The long explanation can be found at [Digital Ocean
-]-get install php5 libapache2-mod-php5 php5-mcryp(https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
-- sudo service apache2 restart and sudo service mysqld restart thub.com/robwierzbowski/5430952)**
+- `./scriptname.sh`  ::  **Runsning a shell script in the Current Folder [Repos](https://gist.github.com/robwierzbowski/5430952)
 - `ifconfig eth0 | grep inet | awk '{ print $2 }'` :: **Find your Server’s IP address**
