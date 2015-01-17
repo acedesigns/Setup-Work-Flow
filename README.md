@@ -32,7 +32,7 @@ So next I will try to SSH to a remote server and push my web project.
 Documentation will be continued ...... But The idea is to Dev on my local machine, push to github, Connect to a remote server with SSH and then Pull from github. Thus illuminating the use of the FTP process.
 
 
-### Some usefull Terminal Commands ###
+### Some useful Terminal Commands ###
 - `sudo chown -R username:group directory` :: **for changing ownership to a folder**
 - `sudo -i` :: **for doing stuff as root**
 - `mkdir -pv /foo/bar` :: **sMake parent directories as neseded and the -v which makes mkdir tell us what it is doing**
@@ -40,6 +40,6 @@ Documentation will be continued ...... But The idea is to Dev on my local machin
 - `./scriptname.sh`  ::  **Runsning a shell script in the Current Folder [Repos](https://gist.github.com/robwierzbowski/5430952)
 - `ifconfig eth0 | grep inet | awk '{ print $2 }'` :: **Find your Servers IP address**
 - `sudo !! `:: **Run Last Command as Sudo**
-- `touch index,html `:: **RCreate a file**
+- `touch index.html `:: **Create a file**
 - `grep -r pattern dir`:: **Search recursively for pattern in dir**
 - `mkdir folder && cd folder && npm install grunt-cli` :: **Run multiple linux commands in one line**
