@@ -39,5 +39,5 @@ Documentation will be continued ...... But The idea is to Dev on my local machin
 - `cp or mv source destination` :: **Copying Moving files**
 - `./scriptname.sh`  ::  **Runsning a shell script in the Current Folder [Repos](https://gist.github.com/robwierzbowski/5430952)
 - `ifconfig eth0 | grep inet | awk '{ print $2 }'` :: **Find your Servers IP address**
-- sudo !! :: **Run Last Command as Sudo**
-- mkdir folder && cd folder && npm install grunt-cli :: **Run multiple linux commands in one line**
+- `sudo !! `:: **Run Last Command as Sudo**
+- `mkdir folder && cd folder && npm install grunt-cli` :: **Run multiple linux commands in one line**
