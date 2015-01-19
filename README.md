@@ -14,6 +14,11 @@ And this serves as a documentation on how I was able to set up my Ubuntu 14.04.1
 
 The long explanation can be found at [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
 
+## My Editor of Choice ##
+` sudo add-apt-repository ppa:webupd8team/sublime-text-3`
+` sudo apt-get update`
+` sudo apt-get install sublime-text-installer`
+
 ## Setting Up Git ##
 - `sudo apt-get install git` 
 - `git config --global user.name "Your Name"`
