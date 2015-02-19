@@ -19,8 +19,24 @@ The long explanation can be found at [Digital Ocean](https://www.digitalocean.co
 - `git config --global user.name "Your Name"`
 - `git config --global user.email "youremail@domain.com"`
 - [Set Up SSH Keys!](https://help.github.com/articles/generating-ssh-keys/#platform-linux)
-- [Basic Git Commands](http://rogerdudler.github.io/git-guide/) 
+- [Basic Git Commands](http://rogerdudler.github.io/git-guide/)
 
+
+## Running into Git ##
+This is not an any particular order.
+
+- `sudo apt-get install meld`
+- `git mergetool -t meld`
+- `git stash`
+- `git pull`
+- `git rm $(git ls-files --deleted)`
+- There is a difference between `git add .` and to `git add *`
+- `git clean -f -d` :: Clean untracked files:
+
+
+## Some usefull npm commands ##
+- `npm list -g --depth=0` chechk what modules have been installed globally
+- `npm uninstall -g package` Uninstall global package. 
 
 ## Server Communication ##
 Lately I have learned that it is safer to communicate with the server using SSH over other conventional methods.
