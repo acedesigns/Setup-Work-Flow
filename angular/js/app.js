@@ -8,7 +8,7 @@
  */
 
  var angular;
- var myApp = angular.module('aceApp', ['ngAnimate', 'mgcrea.ngStrap', 'ui.router', 'ngSanitize' ]);
+ var myApp = angular.module('aceApp', ['ngAnimate', 'uiGmapgoogle-maps', 'mgcrea.ngStrap', 'ui.router', 'ngSanitize' ]);
 
 
 //////////////////////////////////////////////
