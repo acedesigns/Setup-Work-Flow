@@ -1,0 +1,35 @@
+<!-- partial-home.html -->
+<div class="row">
+	<div class="jumbotron">
+
+	<button type="button" class="btn btn-primary" bs-aside="aside">Click to toggle aside</button>
+
+    	<h1>The Homey Page</h1>
+    	<p>This page demonstrates <a href data-animation="am-flip-x" bs-tooltip="nestedViewTip">nested</a> views.</p>  
+
+    	<a ui-sref=".list" class="btn btn-primary">List</a>
+	    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
+        
+        <p class="clearfix"></p>
+
+    	<p>Tight pants next level keffiyeh <a href data-animation="am-flip-x" bs-tooltip="tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown.</p>
+
+    	<!-- <div class="form-group">
+    			    <label class="control-label"><i class="fa fa-calendar"></i> <i class="fa fa-arrows-h"></i> <i class="fa fa-calendar"></i> Date range <small>(dynamic)</small></label><br>
+    			    <div class="form-group col-xs-6">
+    			      <input class="form-control" ng-model="fromDate" data-max-date="{{untilDate}}" placeholder="From" bs-datepicker type="text">
+    			    </div>
+    			    <div class="form-group col-xs-6">
+    			      <input class="form-control" ng-model="untilDate" data-min-date="{{fromDate}}" placeholder="Until" bs-datepicker type="text">
+    			    </div>
+    			</div>
+    	
+    			<div bs-active-pane="tabs.activeTab" bs-tabs>
+    	      		<div ng-repeat="tab in tabs" title="{{ tab.title }}" ng-bind="tab.content" bs-pane></div>
+    	</div> -->
+
+    	<div ui-view></div>
+	</div>	
+</div>
+
+
