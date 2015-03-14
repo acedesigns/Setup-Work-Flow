@@ -6,16 +6,25 @@
 	"license": "MIT",
 	"repository": "strongloop/express",
 	"homepage": "http://acedesigns.co.za",
+	"main": "",
 	"dependencies": {
     	"gulp"          : "3.8.11",
     	"gulp-connect"  : "2.0.6",
     	"gulp-uglify"   : "1.0.2",
     	"gulp-concat"   : "2.5.0"
   	},
+  	"devDependencies": {},
 	"contributors": [
 		"Anele Maqanda <acedesigns123@gmail.com>"
 	],
 	"engines": {
 		"node": ">= 0.10.0"
-	}
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"angular",
+		"bootstrap"
+	]
 }

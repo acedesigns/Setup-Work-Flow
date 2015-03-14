@@ -16,7 +16,6 @@ var paths = {
     './partials/*.html',
     './css/*.css',
     './js/*.js',
-    './js/auth/*.js',
     './js/controllers/*.js',
     './js/directives/*.js',
     './js/filters/*.js',

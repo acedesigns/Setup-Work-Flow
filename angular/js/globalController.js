@@ -10,7 +10,7 @@
     
     $scope.aside = {
       "title": "Title",
-    	"content": "Hello Aside <br />This is a multiline message!"
+    	"content": "Hello from the Aside <br />This is a sideline message!"
     };
 
     $scope.nestedViewTip = {
