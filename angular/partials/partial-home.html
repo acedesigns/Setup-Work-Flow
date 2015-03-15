@@ -1,6 +1,15 @@
 <!-- partial-home.html -->
 <div class="row">
-	<div class="jumbotron">
+    <div class="col-md-12">
+    <slider images="images"/>
+</div>    
+</div>
+
+
+<div class="clearfix"></div>
+<br clear="all" />
+
+<div class="jumbotron">
 
         <h1>{{name}}</h1>
         <p>This page demonstrates <a href data-animation="am-flip-x" bs-tooltip="nestedViewTip">nested</a> views.</p> 
@@ -28,13 +37,12 @@
     			      <input class="form-control" ng-model="untilDate" data-min-date="{{fromDate}}" placeholder="Until" bs-datepicker type="text">
     			    </div>
     			</div>
-    	
     			<div bs-active-pane="tabs.activeTab" bs-tabs>
     	      		<div ng-repeat="tab in tabs" title="{{ tab.title }}" ng-bind="tab.content" bs-pane></div>
     	</div> -->
 
-    	<div ui-view></div>
-	</div>	
-</div>
+    	
+</div>	
+<div ui-view></div>
 
 

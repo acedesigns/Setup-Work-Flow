@@ -4,10 +4,13 @@
  * =======================================================
  */
 
-var   gulp	= require('gulp'),
-      uglify = require('gulp-uglify'),
-      concat = require('gulp-concat'),
-      connect	= require('gulp-connect');
+var   gulp        = require('gulp'),
+      uglify      = require('gulp-uglify'),
+      concat      = require('gulp-concat'),
+      uglifycss   = require('gulp-uglifycss'),
+      concatCss   = require('gulp-concat-css'),
+      minifyHTML  = require('gulp-minify-html')
+      connect     = require('gulp-connect');
 
 var paths = {
   app: './',
@@ -32,22 +35,50 @@ gulp.task('connect', function() {
   });
 });
 
+
 gulp.task('html', function() {
   gulp.src(paths.src)
     .pipe(connect.reload());
 });
 
-gulp.task('compress', function() {
-  return gulp.src('js/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('dist'));
+gulp.task('minify-html', function() {
+  var opts = {
+    conditionals: true,
+    spare:true
+  };
+
+  return gulp.src('./partials/*.html')
+    .pipe(minifyHTML(opts))
+    .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('concatAndUglyfyJs', function() {
+  return gulp.src([
+    './js/*.js',
+    './js/controllers/*.js',
+    './js/directives/*.js',
+    './js/filters/*.js',
+    './js/modules/*.js'
+    ])
+    .pipe(concat({ path: 'myApp.js', stat: { mode: 0666 }}))
+    .pipe(uglify())
+    .pipe(gulp.dest('./js/dist/'));
+});
 
-gulp.task('minify', function() {
-  return gulp.src('js/*.js')
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('./dist/'));
+gulp.task('UglyJsLibs', function() {
+  return gulp.src([
+    './js/lib/angular.min.js',
+    './js/lib/angular-ui-router.min.js',
+    './js/lib/angular-animate.min.js',
+    './js/lib/angular-sanitize.min.js',
+    './js/lib/angular-strap.min.js',
+    './js/lib/angular-strap.tpl.min.js',
+    './js/lib/lodash.min.js',
+    './js/lib/angular-google-maps.min.js'
+    ])
+    .pipe(concat({ path: 'allLibs.js', stat: { mode: 0666 }}))
+    .pipe(uglify())
+    .pipe(gulp.dest('./js/dist/'));
 });
 
 gulp.task('watch', function() {
@@ -55,4 +86,4 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', [ 'connect', 'watch']);

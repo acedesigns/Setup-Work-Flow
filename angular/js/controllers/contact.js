@@ -6,7 +6,7 @@
  */
 
  myApp.controller("contactPage", ['$scope', function ($scope) {
- 	$scope.name = "Contact Pagey";
+ 	$scope.name = "Contact Page";
  	$scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
  }]);
 

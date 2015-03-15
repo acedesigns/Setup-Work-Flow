@@ -1,4 +1,11 @@
-myApp.directive('myMap', function() {
+/* =======================================================
+ *  About Page Controller
+ *
+ *
+ * =======================================================
+ */
+
+ myApp.directive('myMap', function() {
     // directive link function
     var link = function(scope, element, attrs) {
         var map, infoWindow;

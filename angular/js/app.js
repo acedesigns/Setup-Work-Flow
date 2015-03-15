@@ -31,13 +31,6 @@ myApp.config (function ($datepickerProvider) {
     });
 })
 
-
-/*myApp.config(['uiGmapGoogleMapApiProvider', function(GoogleMapApiProviders) {
-        GoogleMapApiProvider.configure({
-            china: true
-        });
-    }]
-);*/
 //////////////////////////////////////////////
 myApp.config (function ($stateProvider, $urlRouterProvider) {
     'use strict';    
