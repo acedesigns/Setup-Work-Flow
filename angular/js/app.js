@@ -2,13 +2,15 @@
 /* =======================================================
  *  app.js
  *
- * http://mgcrea.github.io/angular-strap/
+ *  http://mgcrea.github.io/angular-strap/
+ *  https://scotch.io/tutorials/angularjs-multi-step-form-using-ui-router
+ *  https://scotch.io/tutorials/angular-routing-using-ui-router
  *
  * =======================================================
  */
 
  var angular;
- var myApp = angular.module('aceApp', ['ngAnimate', 'uiGmapgoogle-maps', 'mgcrea.ngStrap', 'ui.router', 'ngSanitize' ]);
+ var myApp = angular.module('aceApp', ['ngAnimate', 'mgcrea.ngStrap', 'ui.router', 'ngSanitize' ]);
 
 
 //////////////////////////////////////////////
@@ -29,6 +31,13 @@ myApp.config (function ($datepickerProvider) {
     });
 })
 
+
+/*myApp.config(['uiGmapGoogleMapApiProvider', function(GoogleMapApiProviders) {
+        GoogleMapApiProvider.configure({
+            china: true
+        });
+    }]
+);*/
 //////////////////////////////////////////////
 myApp.config (function ($stateProvider, $urlRouterProvider) {
     'use strict';    
@@ -48,7 +57,9 @@ myApp.config (function ($stateProvider, $urlRouterProvider) {
                     controller : 'aboutPage' 
                 },
             // the child views will be defined here (absolutely named)
-            'columnOne@about': { template: 'Look I am a side column!' },
+            'columnOne@about': { 
+                templateUrl : 'partials/about-page.html'
+            },
             // for column two, we'll define a separate controller 
             'columnTwo@about': { 
                 templateUrl: 'partials/table-data.html',
@@ -58,7 +69,6 @@ myApp.config (function ($stateProvider, $urlRouterProvider) {
     })
     .state('home.list', {
         url: '/list',
-        title: 'Product',
         templateUrl: 'partials/partial-home-list.html',
         controller: function($scope) {
             $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
@@ -66,24 +76,35 @@ myApp.config (function ($stateProvider, $urlRouterProvider) {
     })
     .state('home.paragraph', {
         url: '/paragraph',
-        title: 'Paragraph',
         template: 'I could sure use a drink right now.'
     })
     .state('contact', {
         url: '/contact',
         views : {
             '' : {
-            templateUrl: 'partials/partial-form.html',
+            templateUrl: 'partials/partial-contact.html',
             controller: 'contactPage'
             },
             'columnOne@contact' : {
-                template: 'Google Map will come here'
+                templateUrl: 'partials/partial-google-map.html'
             },
             'columnTwo@contact' : {
-                template: 'A form will come this side'
+                templateUrl: 'partials/partial-contact-form.html',
+                controller : 'formController'
             }
-        }
-            
-        })
+        } 
+    })
+    .state('contact.profile', {
+        url: '/profile',
+        templateUrl: 'partials/partial-form-profile.html'
+    })
+    .state('contact.interests', {
+            url: '/interests',
+            templateUrl: 'partials/partial-contact-interests.html'
+    })
+    .state('contact.payment', {
+        url: '/payment',
+        templateUrl: 'partials/partial-contact-payment.html'
+    })
 });
 
