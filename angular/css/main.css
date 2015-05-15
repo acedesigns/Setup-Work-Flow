@@ -54,6 +54,18 @@ padding: 10px;
 font-size: 40px;
 color: #222;
 }
+
+/* when hiding the thing */
+.ng-hide-add         { 
+  -webkit-animation:0.5s lightSpeedOut ease; 
+  animation:0.5s lightSpeedOut ease; 
+}
+
+/* when showing the thing */
+.ng-hide-remove      { 
+  -webkit-animation:0.5s flipInX ease; 
+  animation:0.5s flipInX ease; 
+}
  
 .slide.ng-hide-add, .slide.ng-hide-remove {
   -webkit-transition:all linear 0.5s;
@@ -72,6 +84,21 @@ color: #222;
 }
 
 
+.angular-google-map-container {
+  height: 500px;
+  width: 100%;
+  margin: 0px;
+  position: relative;
+}
+
+section {
+  margin: 0 auto;
+  padding: 0.1em 3em;
+  text-align: center;
+}
+.color-4 {
+    background: #0e83cd none repeat scroll 0 0;
+}
 
 /* ANIMATION STYLINGS
 ============================================================================= */

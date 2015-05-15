@@ -15,4 +15,14 @@
         <div ui-view="columnTwo"></div>
     </div>
 
+    <div class="col-md-12">
+         <div ckeditor="ckOptions" ng-model="content" ready="onReady()"></div>
+    </div>
+    <br clear="all">
+    <pre>
+     {{content}}   
+    </pre>
+    <br clear="all">
+     
+
 </div>    

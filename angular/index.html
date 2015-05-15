@@ -44,13 +44,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Anele Single Page App</title>
 
-
-	<link rel="stylesheet" href="css/lib/bootstrap.css">
-	<link rel="stylesheet" href="css/lib/font-awesome.min.css">
-    <link rel="stylesheet" href="css/lib/angular-motion.min.css">
-    <link rel="stylesheet" href="css/lib/bootstrap-additions.min.css">
-
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
     <!-- END Styles-->
     <!-- ================================================================================== -->
 	
@@ -61,6 +55,19 @@
 	<script src="js/lib/angular-sanitize.min.js"></script>
 	<script src="js/lib/angular-strap.min.js"></script>
 	<script src="js/lib/angular-strap.tpl.min.js"></script>
+	<script src="js/lib/lodash.min.js"></script>
+	<script src="js/lib/angular-google-maps.js"></script>
+	<script src="js/lib/modernizr.custom.js"></script>
+	<script src="js/lib/loading-bar.min.js"></script>
+	<script src="js/lib/ng-table.min.js"></script>
+	<script src="js/lib/ckeditor.min.js"></script>
+	
+	<!-- =============== GOOGLE ============================================================ -->
+	
+	<script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+	<script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
+
+	<!-- ================================================================================== -->
 	<!-- END Lib Scripts-->
 	<!-- ================================================================================== -->
 
@@ -72,7 +79,6 @@
 	<!-- END Controller Scripts-->
 	<!-- ================================================================================== -->
 	
-	<script src="js/directives/google-maps.js"></script>
 	<script src="js/directives/slider.js"></script>
 	<!-- END Directives Scripts-->	
 	<!-- ================================================================================== -->
@@ -83,16 +89,17 @@
 <body>
 
 <!-- NAVIGATION -->
-<nav class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
+<section class="color-4">
+	<nav class="cl-effect-2" role="navigation">
+    <!-- <div class="navbar-header">
         <a class="navbar-brand" ui-sref="#">AngularUI</a>
-    </div>
-    <ul class="nav navbar-nav">
-        <li><a ui-sref="home">Home</a></li>
-        <li><a ui-sref="about">About</a></li>
-        <li><a ui-sref="contact">Contact</a></li>
-    </ul>
-</nav>
+    </div> -->
+    	<a  ui-sref="home"><span data-hover="Home">Home</span></a>
+        <a ui-sref="about"><span data-hover="About">About</span></a>
+        <a ui-sref="contact"><span data-hover="Contact">Contact</span></a>
+	</nav>	
+</section>
+
 
 <!-- MAIN CONTENT -->
 <div class="container" ng-controller="global">

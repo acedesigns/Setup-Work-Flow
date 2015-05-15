@@ -10,14 +10,16 @@
  */
 
  var angular;
- var myApp = angular.module('aceApp', ['ngAnimate', 'mgcrea.ngStrap', 'ui.router', 'ngSanitize' ]);
+ var myApp = angular.module('aceApp', ['ngAnimate', 'mgcrea.ngStrap', 'ui.router', 
+                                        'ngSanitize', 'uiGmapgoogle-maps',
+                                        'angular-loading-bar', 'ngTable' , 'ckeditor' ]);
 
 
 //////////////////////////////////////////////
 myApp.config (function ($asideProvider) {
     angular.extend ($asideProvider.defaults, {
         animation: 'am-fadeAndSlideLeft',
-        /*placement: 'left',*/
+        placement: 'left',
         container: 'body',
         html: true
     });

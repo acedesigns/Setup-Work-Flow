@@ -14,7 +14,8 @@
     	"gulp-concat"   	: "2.5.0",
     	"gulp-uglifycss" 	: "1.0.4",
     	"gulp-concat-css"	: "2.1.1",
-    	"gulp-minify-html"	: "1.0.0"
+    	"gulp-minify-html"	: "1.0.0",
+    	"gulp-useref"		: "1.1.0"
   	},
   	"devDependencies": {},
 	"contributors": [
