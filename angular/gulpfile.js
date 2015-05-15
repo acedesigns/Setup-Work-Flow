@@ -85,14 +85,13 @@ gulp.task('UglyJsLibs', function() {
     './js/lib/ng-table.min.js',
     './js/lib/ckeditor.min.js'
     ])
-    .pipe(concat({ path: 'libs.js', stat: { mode: 0666 }}))
+    .pipe(concat({ path: 'libs.js'}))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js/'));
 });
 
 gulp.task('AppJs', function() {
   return gulp.src([
-    './js/app.js',
     './js/globalController.js',
     './js/controllers/home.js',
     './js/controllers/about.js',
