@@ -50,8 +50,11 @@ Lately I have learned that it is safer to communicate with the server using SSH 
 I think this method is slightly different from the SSH described above, because I was able to SSh into my **http://localhost**. I presume that I would do the same to a remote server.
 
 - `sudo apt-get install openssh-server`
+- You can use secure copy (scp) with the recursive option `scp -r /path/to/local/dir user@remotehost:/path/to/remote/dir`
+- Alternatively, use rsync because you can resume transfers if the connection breaks, and it intelligently transfers only the differences between files: `rsync -avz -e 'ssh' /path/to/local/dir user@remotehost:/path/to/remote/dir`
 
 So next I will try to SSH to a remote server and push my web project.
+
 Documentation will be continued ...... But The idea is to Dev on my local machine, push to github, Connect to a remote server with SSH and then Pull from github. Thus illuminating the use of the FTP process.
 
 

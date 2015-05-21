@@ -21,3 +21,10 @@ Doing a `ripple emulate` it opens up Chrome and there are a lot of alert pop ups
 `[Error: ANDROID_HOME is not set and "android" command not in your PATH. You must fulfill at least one of these conditions.]
 `
 2. You will need [Android SDK's](https://developer.android.com/sdk/index.html)
+3. To get KVM installed in order to get the emulaor running `sudo apt-get install qemu-kvm libvirt-bin bridge-utils virt-manager`
+
+10451926
+
+Starting emulator for AVD 'Nexus_5_API_22_x86'
+PANIC: HOME is defined but could not find Nexus_5_API_22_x86.ini file in $HOME/.android/avd
+(Note: avd is searched in the order of $ANDROID_AVD_HOME,$ANDROID_SDK_HOME/.android/avd and $HOME/.android/avd)
