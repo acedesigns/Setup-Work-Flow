@@ -17,14 +17,27 @@ Doing a `ripple emulate` it opens up Chrome and there are a lot of alert pop ups
 
 ### Deploying The App to the PLay Store
 
-1. Doing a `ionic build android`, will give you an error
-`[Error: ANDROID_HOME is not set and "android" command not in your PATH. You must fulfill at least one of these conditions.]
-`
+1. Doing a `ionic build android`, will give you an error `[Error: ANDROID_HOME is not set and "android" command not in your PATH. You must fulfill at least one of these conditions.]`
+..* Open Up `nano ~/.bashrc` and at the end of the file paste
+> ```
+> export ANDROID_HOME=/home/usename/android/adt-bundle-linux/sdk
+> export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platforms-tools
+> ```
+
+..* Open Up `nano ~/.profile` and at the end of the file paste
+> ```
+> export ANDROID_HOME=/home/usename/android/adt-bundle-linux/sdk
+> export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platforms-tools
+> ```
 2. You will need [Android SDK's](https://developer.android.com/sdk/index.html)
 3. To get KVM installed in order to get the emulaor running `sudo apt-get install qemu-kvm libvirt-bin bridge-utils virt-manager`
 
+For my scenario I had to chown my whole home directory, so run `sudo chown -R username:username .`
+
+The error message `
+ERROR building one of the platforms: Error: /home/anele/Templates/myApp/platforms/android/cordova/build: Command failed with exit code 8
+You may not have the required environment or OS to build this project
+Error: /home/anele/Templates/myApp/platforms/android/cordova/build: Command failed with exit code 8`
+
 10451926
 
-Starting emulator for AVD 'Nexus_5_API_22_x86'
-PANIC: HOME is defined but could not find Nexus_5_API_22_x86.ini file in $HOME/.android/avd
-(Note: avd is searched in the order of $ANDROID_AVD_HOME,$ANDROID_SDK_HOME/.android/avd and $HOME/.android/avd)
