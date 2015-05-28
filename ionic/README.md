@@ -20,8 +20,8 @@ Doing a `ripple emulate` it opens up Chrome and there are a lot of alert pop ups
 ### Deploying The App to the Play Store
 
 1. Doing a `ionic build android`, will give you an error `[Error: ANDROID_HOME is not set and "android" command not in your PATH. You must fulfill at least one of these conditions.]`
-
  Open Up `nano ~/.profile` and at the end of the file paste
+
 > ```
 > export ANDROID_HOME=/home/usename/android/adt-bundle-linux/sdk
 > export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platforms-tools
@@ -36,5 +36,8 @@ ERROR building one of the platforms: Error: /home/anele/Templates/myApp/platform
 You may not have the required environment or OS to build this project
 Error: /home/anele/Templates/myApp/platforms/android/cordova/build: Command failed with exit code 8`
 
-10451926
+#### Note
+These are not in any order, I just put them as I remembered. There may be things That I have forgotten about, I wi; try and update as I remember.
+
+## The actuall App is comming.
 
