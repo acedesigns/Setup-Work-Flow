@@ -37,7 +37,7 @@ You may not have the required environment or OS to build this project
 Error: /home/anele/Templates/myApp/platforms/android/cordova/build: Command failed with exit code 8`
 
 #### Note
-These are not in any order, I just put them as I remembered. There may be things That I have forgotten about, I wi; try and update as I remember.
+These are not in any order, I just put them as I remembered. There may be things That I have forgotten about, I will try and update as I remember.
 
 ## The actuall App is comming.
 
