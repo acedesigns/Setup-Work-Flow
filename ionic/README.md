@@ -41,3 +41,4 @@ These are not in any order, I just put them as I remembered. There may be things
 
 ## The actuall App is comming.
 
+The App files are on the `www` folder. You will need to run `ionic build android` for the APK installation file.
