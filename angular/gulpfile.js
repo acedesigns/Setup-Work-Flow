@@ -22,6 +22,7 @@ var paths = {
     './js/*.js',
     './js/controllers/*.js',
     './js/directives/*.js',
+    './js/services/*.js',
     './js/filters/*.js',
     './js/modules/*.js'
     ]
