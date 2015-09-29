@@ -1,11 +1,6 @@
 
 /* =======================================================
  *  app.js
- *
- *  http://mgcrea.github.io/angular-strap/
- *  https://scotch.io/tutorials/angularjs-multi-step-form-using-ui-router
- *  https://scotch.io/tutorials/angular-routing-using-ui-router
- *
  * =======================================================
  */
 
