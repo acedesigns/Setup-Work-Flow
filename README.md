@@ -34,12 +34,16 @@ This is not an any particular order.
 
 - `sudo apt-get install meld`
 - `git mergetool -t meld`
-- `git stash`
+- `git stash` or `git stash list`
 - `git pull`
+- `git stash show`
 - `git rm $(git ls-files --deleted)`
-- There is a difference between `git add .` and to `git add *`
+- There is a difference between `git add .` and to `git add *` I still have to fig it out.
 - `git clean -f -d` :: Clean untracked files:
 
+There are instances where you would like to just `"Unstash"` just a single file/s.
+- `git checkout stash@{0} -- <filename>` the `stash@{0}` is sort of  like an array where the `0` represents the first stash from the list
+- `git diff stash@{0}^! -- <filename>` a Command to see the changes you made on that file before you stashed it. Use the above commant to bring them back 
 
 ## Some usefull npm commands ##
 - `npm list -g --depth=0` chechk what modules have been installed globally
