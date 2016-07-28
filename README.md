@@ -71,6 +71,7 @@ Documentation will be continued ...... Bu`t The idea is to Dev on my local machi
 - `adb shell pm path "packadge name"`
 - `adb pull "pathe of apk"`
 
+<hr>
 
 ### Some useful Terminal Commands ###
 - `sudo chown -R username:group directory` :: **for changing ownership to a folder**
