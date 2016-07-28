@@ -59,7 +59,17 @@ I think this method is slightly different from the SSH described above, because 
 
 So next I will try to SSH to a remote server and push my web project.
 
-Documentation will be continued ...... But The idea is to Dev on my local machine, push to github, Connect to a remote server with SSH and then Pull from github. Thus illuminating the use of the FTP process.
+Documentation will be continued ...... Bu`t The idea is to Dev on my local machine, push to github, Connect to a remote server with SSH and then adb start-serverPull from github. Thus illuminating the use of the FTP process.
+
+<hr>
+
+### Anroid Hacking Commands
+- `adb shell pm list packages` Uninstall global package.
+- `adb devices`
+- `adb kill-server`
+- `adb start-server`
+- `adb shell pm path "packadge name"`
+- `adb pull "pathe of apk"`
 
 
 ### Some useful Terminal Commands ###
