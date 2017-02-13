@@ -30,7 +30,7 @@ The long explanation can be found at [Digital Ocean](https://www.digitalocean.co
 
 
 ## SSH ##
-```
+
 - Normal way to connect `ssh remote_username@remote_host`
 - `ls -al ~/.ssh`to see if existing SSH keys are present
 - `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host/IP`
