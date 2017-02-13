@@ -29,6 +29,15 @@ The long explanation can be found at [Digital Ocean](https://www.digitalocean.co
 - [Basic Git Commands](http://rogerdudler.github.io/git-guide/)
 
 
+## SSH
+- `ls -al ~/.ssh`to see if existing SSH keys are present
+- `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host/IP`
+- `sudo nano ~/.bashrc`
+- `alias aliasname='commands'`
+
+[Save Connection Details :: TL;DR](http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/)
+
+
 ## Running into Git ##
 This is not an any particular order.
 
