@@ -58,7 +58,10 @@ There are instances where you would like to just `"Unstash"` just a single file/
 
 ## Some usefull npm commands ##
 - `npm list -g --depth=0` chechk what modules have been installed globally
-- `npm uninstall -g package` Uninstall global package. 
+- `npm uninstall -g package` Uninstall global package.
+- `npm install -g package@0.0.0` Install Specific Version of a Module.
+- `npm outdated -g` Check for outdated packages.
+- 
 
 ## Server Communication ##
 Lately I have learned that it is safer to communicate with the server using SSH over other conventional methods.
