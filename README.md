@@ -1,4 +1,4 @@
-##My set up for Ubuntu 14.04##
+## My set up for Ubuntu 14.04 ##
 
 So I am moving away from using [MS Windows](http://windows.microsoft.com) and I want to truly embrace Open Source. So this is just to document my experience in getting myself ready for pure #joy.
 
