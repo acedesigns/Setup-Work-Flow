@@ -56,6 +56,17 @@ There are instances where you would like to just `"Unstash"` just a single file/
 - `git checkout stash@{0} -- <filename>` the `stash@{0}` is sort of  like an array where the `0` represents the first stash from the list
 - `git diff stash@{0}^! -- <filename>` a Command to see the changes you made on that file before you stashed it. Use the above commant to bring them back 
 
+### Adding Local Repo To BitBucket
+1. Locally, change to the root directory of your existing source code.
+
+```
+git init
+git add --all / single file
+git commit -m "Initial Commit"
+git remote add origin https://username@bitbucket.org/username/repo.git
+git push -u origin master
+```
+
 ## Some usefull npm commands ##
 - `npm list -g --depth=0` chechk what modules have been installed globally
 - `npm uninstall -g package` Uninstall global package.
