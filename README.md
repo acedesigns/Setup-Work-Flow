@@ -98,6 +98,19 @@ Documentation will be continued ...... Bu`t The idea is to Dev on my local machi
 
 <hr>
 
+### IONIC Commands ###
+```
+ionic start --list // List available starter templates
+ionic start myApp blank --type=ionic-angular
+OPTIONS
+
+--capacitor // 
+--cordova   // Include Cordova integration
+--type      // Type of project to start (e.g. angular, ionic-angular, ionic1)
+--no-git    // 
+--project-id // Specify a slug for your app (used for the directory name and npm/yarn package name)
+```
+
 ### Some useful Terminal Commands ###
 - `sudo chown -R username:group directory` :: **for changing ownership to a folder**
 - `sudo -i` :: **for doing stuff as root**
