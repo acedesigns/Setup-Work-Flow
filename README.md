@@ -110,6 +110,13 @@ OPTIONS
 --no-git    // 
 --project-id // Specify a slug for your app (used for the directory name and npm/yarn package name)
 ```
+## Ionic Cordova Resources getting stuck
+```
+ionic cordova resources ios --icon --verbose
+ionic cordova resources android --icon --verbose
+ionic cordova resources ios --splash --verbose
+ionic cordova resources android --splash --verbose
+```
 
 ### Some useful Terminal Commands ###
 - `sudo chown -R username:group directory` :: **for changing ownership to a folder**
