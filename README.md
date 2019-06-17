@@ -110,6 +110,10 @@ OPTIONS
 --no-git    // 
 --project-id // Specify a slug for your app (used for the directory name and npm/yarn package name)
 ```
+#### More Commands
+```
+ionic cordova run android -l --target='Nexus-5X-API-28'
+```
 ## Ionic Cordova Resources getting stuck
 ```
 ionic cordova resources ios --icon --verbose
