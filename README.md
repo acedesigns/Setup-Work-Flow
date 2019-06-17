@@ -113,6 +113,7 @@ OPTIONS
 #### More Commands
 ```
 ionic cordova run android -l --target='Nexus-5X-API-28'
+ionic cordova emulate --list
 ```
 ## Ionic Cordova Resources getting stuck
 ```
