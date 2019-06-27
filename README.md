@@ -94,11 +94,11 @@ Documentation will be continued ...... Bu`t The idea is to Dev on my local machi
 - `adb kill-server`
 - `adb start-server`
 - `adb shell pm path "packadge name"`
-- `adb pull "pathe of apk"`
+- `adb pull "path of apk"`
 
 <hr>
 
-### IONIC Commands ###
+### IONIC 3 Commands ###
 ```
 ionic start --list // List available starter templates
 ionic start myApp blank --type=ionic-angular
@@ -110,8 +110,9 @@ OPTIONS
 --no-git    // 
 --project-id // Specify a slug for your app (used for the directory name and npm/yarn package name)
 ```
-#### More Commands
+#### More IONIC 3 Commands
 ```
+ionic cordova run ios --list
 ionic cordova run android -l --target='Nexus-5X-API-28'
 ionic cordova emulate --list
 ```
