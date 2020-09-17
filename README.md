@@ -127,6 +127,18 @@ ionic cordova resources android --splash --verbose
 ```
 sudo apt install openssl php-common php-curl php-json php-mbstring php-mysql php-xml php-zip
 sudo apt-get install php7.3-gd // depends on php version
+
+service apache2 restart
+
+sudo a2enmod rewrite
+
+nano /etc/apache2/apache2.conf
+
+<Directory /var/www/>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+</Directory>
 ```
 
 ### Some useful Terminal Commands ###
