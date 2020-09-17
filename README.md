@@ -139,6 +139,8 @@ nano /etc/apache2/apache2.conf
         AllowOverride All
         Require all granted
 </Directory>
+
+https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-18-04
 ```
 
 ### Some useful Terminal Commands ###
