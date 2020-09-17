@@ -123,6 +123,11 @@ ionic cordova resources android --icon --verbose
 ionic cordova resources ios --splash --verbose
 ionic cordova resources android --splash --verbose
 ```
+#### Digital Ocean
+```
+sudo apt install openssl php-common php-curl php-json php-mbstring php-mysql php-xml php-zip
+sudo apt-get install php7.3-gd // depends on php version
+```
 
 ### Some useful Terminal Commands ###
 - `sudo chown -R username:group directory` :: **for changing ownership to a folder**
