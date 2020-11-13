@@ -98,6 +98,18 @@ Documentation will be continued ...... Bu`t The idea is to Dev on my local machi
 
 <hr>
 
+## Deploy to Heroku ##
+- [The Long Read](https://devcenter.heroku.com/articles/deploying-nodejs)
+- [Deploy with Git](https://devcenter.heroku.com/articles/git)
+
+- `heroku -v` check which version you have
+- `heroku login` log in via cli.
+- `heroku create myapp` Create the app yourself as opposed to letting heroku do it 4 u
+- `heroku git:remote -a myapp` if you run into git repo error.
+- `git push heroku master` to push 
+
+<hr>
+
 ### IONIC 3 Commands ###
 ```
 ionic start --list // List available starter templates
