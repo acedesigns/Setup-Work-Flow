@@ -149,6 +149,8 @@ nano /etc/apache2/apache2.conf
 https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
 https://stackoverflow.com/a/48494280/921143
 
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04
+
 <Directory /var/www/>
         Options Indexes FollowSymLinks
         AllowOverride All
