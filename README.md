@@ -136,6 +136,7 @@ ionic cordova resources ios --splash --verbose
 ionic cordova resources android --splash --verbose
 ```
 #### Digital Ocean
+[Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
 ```
 sudo apt install openssl php-common php-curl php-json php-mbstring php-mysql php-xml php-zip
 sudo apt-get install php7.3-gd // depends on php version
