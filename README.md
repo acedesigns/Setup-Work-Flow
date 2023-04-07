@@ -64,7 +64,7 @@ git init
 git add --all / single file
 git commit -m "Initial Commit"
 git remote add origin https://username@bitbucket.org/username/repo.git
-git push -u origin master
+git push -u origin main
 ```
 
 ## Some usefull npm commands ##
